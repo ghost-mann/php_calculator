@@ -38,11 +38,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 <h1>SIMPLE CALCULATOR</h1>
 <div class="container">
-    <form class="form-group" method="post">
+    <form class="form-group" method="POST">
         <div class="input-boxes">
-            <label for="first">Enter the First Number: </label><input id="first" name="first" type="number" placeholder="1..2...3...4"><br>
-            <label for="second">Enter the Second Number: </label><input id="second" name="second" type="number" placeholder="5..6..7..8"><br>
-            <label for="total">TOTAL</label><input id="total" name="total" type="number" placeholder="The Answer is..." value="<?php echo $total; ?>">
+            <label for="first">Enter the First Number: </label>
+            <input id="first" name="first" type="number" placeholder="1...2...3...4"
+                    value="<?php echo isset($_POST['first']) ? $_POST['first'] : ''; ?>"><br>
+            <label for="second">Enter the Second Number: </label>
+            <input id="second" name="second" type="number" placeholder="5...6...7...8"
+                    value="<?php echo isset($_POST['second']) ? $_POST['second'] : ''?>"><br>
+            <label for="total">TOTAL</label>
+            <input id="total" name="total" type="number" placeholder="The Answer is..."
+                   value="<?php echo $total; ?>"
+
         </div>
         <div class="operations">
             <select name="operation" required>
