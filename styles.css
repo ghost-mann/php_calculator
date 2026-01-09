@@ -12,9 +12,16 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20px;
+
 }
 
 .operations {
+    display: flex;
+    margin-top: 20px;
+    width: 30%;
 
+}
+
+.button {
+    margin-left: 10px;
 }

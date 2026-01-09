@@ -23,8 +23,8 @@
                 <option value="-" <?php echo (isset($_POST['operation']) && $_POST['operation'] == '-') ? 'selected' : ''?>>-</option>
                 <option value="*" <?php echo (isset($_POST['operation']) && $_POST['operation'] == '*') ? 'selected' : ''?>>*</option>
                 <option value="/" <?php echo (isset($_POST['operation']) && $_POST['operation'] == '/') ? 'selected' : ''?>>/</option>
-
             </select>
+            <button class="button" type="submit" id="button">SUBMIT</button>
         </div>
     </form>
 </div>
