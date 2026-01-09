@@ -12,4 +12,9 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 20px;
+}
+
+.operations {
+
 }
