@@ -5,4 +5,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 2;
+}
+
+.input-boxes {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
