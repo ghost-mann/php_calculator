@@ -1,4 +1,10 @@
 <?php
+$num1 = $_POST['first'];
+$num2 = $_POST['second'];
+$operation = $_POST['operation'];
+
+
+
 ?>
 
 <!DOCTYPE html>
